@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyledContainer, StyledHeader, StyledMain } from './styles/Home.style';
-import { Header, ImageLoader } from './components';
+import { Header, ImageLoader, Strip } from './components';
 
 
 export default function Home() {

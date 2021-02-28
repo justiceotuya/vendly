@@ -4,7 +4,7 @@ import Logo from '../../../public/assets/icons/logo.svg'
 import Link from 'next/link'
 import Image from 'next/image'
 import Menu from '../../../public/assets/icons/menu.svg'
-import Arrow from '../../../public/assets/icons/arrow.svg'
+import Dropdown from '../../../public/assets/icons/dropdown.svg'
 import User from '../../../public/assets/icons/user.svg'
 
 export const Header = ({ isMenuOpen, handleOpenMenu, decodedData }) => {
@@ -31,7 +31,7 @@ export const Header = ({ isMenuOpen, handleOpenMenu, decodedData }) => {
                         </Link>
                     </li>
                     <li>
-                        <a> {twitter[0]}</a>
+                        <a> {twitter && twitter[0]}</a>
                     </li>
                 </ul>
             </nav>
@@ -49,8 +49,8 @@ export const Header = ({ isMenuOpen, handleOpenMenu, decodedData }) => {
                     </li>
                     <li className="user-details">
                         <User className="user-avatar" />
-                        <a>{twitter[0]}</a>
-                        <span className="user-more-details"><Arrow /></span>
+                        <a>{twitter && twitter[0]}</a>
+                        <span className="user-more-details"><Dropdown /></span>
                     </li>
                 </ul>
             </nav>

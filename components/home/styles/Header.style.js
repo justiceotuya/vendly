@@ -4,7 +4,7 @@ export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 10px 10px 30px;
     z-index:1;
 
 
@@ -73,12 +73,14 @@ opacity: ${props => props.action ? 'visible' : 'hidden'};
 
     .navigation-links__desktop{
       display: flex;
-    padding: 10px 20px;
+    padding: 10px 10px 10px 30px;
     background: #ffffff;
-    border: 1px solid #8EEED8;
     border-radius: 3px;
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    opacity :0.9;
+    border-radius: 4px;
+    border : 1px solid rgb(23, 231, 179);
 
     li {
       padding: 0 20px;
@@ -87,8 +89,13 @@ opacity: ${props => props.action ? 'visible' : 'hidden'};
 
     li:nth-child(2){
      margin: 0 10px;
-     border-right: 1px dotted #157A7E;
-     border-left: 1px dotted #157A7E;
+     border-right: 2px dotted rgb(0,110,114);
+     border-left: 2px dotted rgb(0,110,114);
+    }
+
+    li:nth-child(3){
+    font-weight: 400;
+    font-size: 14px;
     }
 
     .user-details{
@@ -102,11 +109,12 @@ opacity: ${props => props.action ? 'visible' : 'hidden'};
     }
     }
    .user-more-details, .user-avatar{
-      width: 20px;
-    height: 20px;
+      width: 15px;
+      height: 15px;
     }
-    .user-more-details{
-
+    .user-avatar{
+      position: relative;
+      top:2px;
     }
     li>a:hover {
       opacity: .7
