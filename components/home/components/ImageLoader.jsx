@@ -57,8 +57,8 @@ export const ImageLoader = ({ isImageLoaded, handleToggleImageLoad, decodedData 
                     <div className="loader">
                         <Lottie
                             options={defaultOptions}
-                            height={100}
-                            width={100}
+                            height={150}
+                            width={150}
                         />
                     </div>}
         </StyledMain>

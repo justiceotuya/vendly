@@ -55,18 +55,15 @@ export default function Home() {
 
             setIsDataDecoded(true)
             setDecodedData(newObject)
-            // return newObject
         }
-        // const extractedData = cleanupDecodedSiteAndSendDataToObject()
-        // console.log(extractedData)
-        // cleanupDecodedSiteAndSendDataToObject()
+
 
         setTimeout(cleanupDecodedSiteAndSendDataToObject, 3000);
 
         () => {
             clearTimeout(cleanupDecodedSiteAndSendDataToObject)
         }
-    }, [isDataDecoded]);
+    }, []);
 
 
     const handleDecodeSite = () => {

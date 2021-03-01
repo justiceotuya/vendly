@@ -9,7 +9,7 @@ export const StyledMain = styled.main`
 
   .loader {
     position: relative;
-    bottom: 90px;
+    /* bottom: 90px; */
   }
 
     .image-background {
