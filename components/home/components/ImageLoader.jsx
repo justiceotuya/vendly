@@ -41,10 +41,10 @@ export const ImageLoader = ({ isImageLoaded, handleToggleImageLoad, decodedData 
     }
 
     return (
-        <StyledMain isImageLoaded={isImageLoaded}>
+        <StyledMain isImageLoaded={isImageLoaded} background={currentWallPaper.desktop}>
             <img
                 src={currentWallPaper.desktop}
-                srcSet={`${currentWallPaper.mobile} 767w, ${currentWallPaper.desktop} 1200w`}
+                // srcSet={`${currentWallPaper.mobile} 767w, ${currentWallPaper.desktop} 1200w`}
                 alt="wallpaper"
                 onLoad={handleToggleImageLoad}
                 className="image-background"

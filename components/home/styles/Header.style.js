@@ -4,9 +4,13 @@ export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 10px 10px 30px;
     z-index:1;
+      padding: 10px;
 
+
+    @media screen and (min-width: 760px){
+      padding: 10px 10px 10px 30px;
+    }
 
     nav {
       position: relative;
@@ -73,7 +77,7 @@ opacity: ${props => props.action ? 'visible' : 'hidden'};
 
     .navigation-links__desktop{
       display: flex;
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
     background: #ffffff;
     border-radius: 3px;
     font-weight: 700;

@@ -9,7 +9,7 @@ export const StyledMain = styled.main`
 
   .loader {
     position: relative;
-    /* bottom: 90px; */
+    bottom: 90px;
   }
 
     .image-background {
@@ -21,6 +21,6 @@ export const StyledMain = styled.main`
     z-index: 0;
     transform:${props => props.isImageLoaded ? 'scale(1) translateZ(0)' : 'scale(0.9)'};
     opacity: ${props => props.isImageLoaded ? '1' : '0'};
-    transition: opacity 1.5s ease-out, transform 0.04s ease-in;
+    transition: opacity 3s ease-out, transform 0.04s ease-in;
   }
 `
